@@ -1,0 +1,7 @@
+{
+  "clientId" : "577798165014-joo567egnbtrb55j3mamnkkmqnh67pod.apps.googleusercontent.com",
+  "serviceAccountEmail" : "577798165014-qfl7uobehl14lf47na0j5kaq2fk0v6d0@developer.gserviceaccount.com",
+  "serviceAccountPrivateKeyFile" : "gcp-taiwan-264ce685f9e3.pem",
+  "widgetUrl" : "https://gcp-taiwan.appspot.com/widget",
+  "cookieName" : "gtoken"
+}
