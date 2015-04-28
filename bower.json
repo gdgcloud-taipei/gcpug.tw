@@ -1,0 +1,24 @@
+{
+  "name": "gcpup.tw",
+  "version": "0.0.0",
+  "authors": [
+    "Cage <cage@mitac.com.tw>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.4",
+    "google-code-prettify": "~1.0.4",
+    "holderjs": "~2.6.0",
+    "bootstrap-select": "~1.6.4",
+    "bootstrap-switch": "~3.3.2",
+    "flat-ui": "~2.2.2",
+    "font-awesome": "~4.3.0"
+  }
+}
