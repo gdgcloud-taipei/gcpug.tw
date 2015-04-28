@@ -1,0 +1,50 @@
+application: gcp-taiwan
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.icoq
+
+- url: /public
+  static_dir: public
+
+- url: .*
+  script: application.app.router
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: "2.6"
+- name: webob
+  version: "1.2.3"
+- name: pycrypto
+  version: "2.6"
+
+skip_files:
+# Default patterns skipped by App Engine, which must be repeated since
+# specifying skip_files overrides them otherwise.  See
+# https://developers.google.com/appengine/docs/python/config/appconfig#Skipping_Files.
+- ^(.*/)?app\.yaml
+- ^(.*/)?app\.yml
+- ^(.*/)?index\.yaml
+- ^(.*/)?index\.yml
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*/RCS/.*
+- ^(.*/)?\..*
+# Build files that have no effect in App Engine's runtime.
+- ^README\..*
+- \.gitignore
+- ^\.git/.*
+- \.*\.lint$
+- ^gulp\.js
+- ^node_modules/(.*/)?
+- ^bower_components/(.*/)?
+- ^assets/(.*/)?
+- ^sources/(.*/)?

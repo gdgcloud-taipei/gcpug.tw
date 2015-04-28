@@ -1,0 +1,118 @@
+.bottom-menu {
+    background: #ebedef;
+    color: #bcc3ca;
+    padding: 39px 0 42px;
+}
+
+.bottom-menu .navbar-brand {
+    font-size: 24px;
+    margin-top: -4px;
+    padding: 0;
+}
+
+.bottom-menu .title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.bottom-menu a {
+    color: inherit;
+}
+
+.active .bottom-menu a,
+.bottom-menu a:hover,
+.bottom-menu a:focus {
+    color: #1abc9c;
+}
+
+.bottom-menu .label,
+.bottom-menu .badge {
+    vertical-align: middle;
+}
+
+.bottom-menu .bottom-links {
+    font-size: 14px;
+    line-height: 1.286;
+}
+
+.bottom-menu .bottom-links:before,
+.bottom-menu .bottom-icons:before,
+.bottom-menu .bottom-links:after,
+.bottom-menu .bottom-icons:after {
+    content: " ";
+    /* 1 */
+
+    display: table;
+    /* 2 */
+
+}
+
+.bottom-menu .bottom-links:after,
+.bottom-menu .bottom-icons:after {
+    clear: both;
+}
+
+.bottom-icons {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.bottom-menu-inverse {
+    background-color: #34495e;
+    color: #677786;
+}
+
+.bottom-menu-large {
+    padding-bottom: 56px;
+    padding-top: 60px;
+}
+
+.bottom-menu-large .navbar-brand {
+    margin-top: -2px;
+}
+
+.bottom-menu-large .bottom-links li {
+    float: none;
+    line-height: 22px;
+    margin-right: 0;
+}
+
+.bottom-menu-large .title {
+    margin-bottom: 10px;
+}
+
+.bottom-links,
+.bottom-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-links li,
+.bottom-icons li {
+    display: block;
+    float: left;
+    margin: 0 18px 0 0;
+}
+
+@media (max-width: 767px) {
+    .bottom-menu .navbar-brand,
+    .bottom-menu .bottom-links {
+        margin-bottom: 30px;
+    }
+
+    .bottom-menu .navbar-brand {
+        padding: 15px;
+        float: none;
+    }
+
+    .bottom-menu .bottom-links li {
+        float: none;
+        margin-bottom: 2px;
+    }
+
+    .bottom-menu [class*="span"]:last-child .bottom-links {
+        margin-bottom: 0;
+    }
+}

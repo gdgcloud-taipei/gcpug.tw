@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<!-- /.item -->
+<div class="item content" id="content_section2">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="editContent" data-selector="Footers" style="outline: none; cursor: default;">
+          <h2>{{ exception.__class__.__name__}}</h2>
+        </div>
+
+        <p>
+          {{ exception.__class__.__name__}}: {{ exception }}
+        </p>
+
+        <p>Go Home by <a href="/">clicking here</a>!</p>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+</div>
+<!-- /.item -->
+
+{% endblock%}

@@ -1,0 +1,21 @@
+*~
+*.pyc
+bower_components
+node_modules
+.idea
+.DS_Store
+*.p12
+*.pem
+.tmp
+
+#library source
+*.zip
+
+#soucres
+sources
+
+#pip install folder
+lib
+
+#public - auto generator from gulp
+public
