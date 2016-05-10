@@ -36,6 +36,10 @@ class MainHandler(BaseRequestHandler):
   def get(self):
     self.render('index.html')
 
+class IO2016Handler(BaseRequestHandler):
+  def get(self):
+    self.render('io2016.html')
+
 
 class Handle404(BaseRequestHandler):
   def get(self):
@@ -44,6 +48,7 @@ class Handle404(BaseRequestHandler):
 
 routes = [
   ('/', MainHandler),
+  ('/io2016', IO2016Handler),
   # Route('/signin', handler="controllers.base.GitkitHandler:_on_sign", name="auth_sign"),
   # Route('/logout', handler="controllers.base.GitkitHandler:logout", name="logout"),
   # Route('/widget', handler="controllers.base.GitkitHandler:_widget", name="auth_widget")
